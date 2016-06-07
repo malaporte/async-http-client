@@ -9,7 +9,7 @@
     <groupId>com.ning</groupId>
     <artifactId>async-http-client</artifactId>
     <name>Asynchronous Http Client</name>
-    <version>1.9.39-SNAPSHOT</version>
+    <version>1.9.38-coveo</version>
     <packaging>jar</packaging>
     <description>
         Async Http Client library purpose is to allow Java applications to easily execute HTTP requests and
@@ -509,19 +509,10 @@
     </profiles>
     <distributionManagement>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Release</name>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>Coveo</id>
+            <name>Coveo-releases</name>
+            <url>http://maven.corp.coveo.com/artifactory/ext-release-local</url>
         </repository>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>sonatype-nexus-snapshots</name>
-            <url>${distMgmtSnapshotsUrl}</url>
-        </snapshotRepository>
-        <site>
-            <id>github</id>
-            <url>gitsite:git@github.com/AsyncHttpClient/async-http-client.git</url>
-        </site>
     </distributionManagement>
     <repositories>
         <repository>
